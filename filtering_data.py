@@ -75,7 +75,7 @@ def run():
     all_python_dev = [worker['name'] for worker in DATA if worker['language'] == 'python']
     adult = list(filter(lambda worker: worker['age'] > 50, DATA))
     adult = list(map(lambda worker: worker['name'], adult))    
-    print(f'Todos los trabajadores de python son: {all_python_dev}, todas las personas mayor de 50 son: {adult}')
+    print(f'Workers of python: {all_python_dev}, People older than 50 are: {adult}')
 
 
 if __name__ == '__main__':
